@@ -1,0 +1,141 @@
+.customers-page {
+  display: flex;
+  align-items: stretch;
+  height: 100vh;
+  overflow-x: hidden;
+
+  main {
+    margin: 30px auto;
+    padding: 32px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    height: fit-content;
+    width: 100%;
+    max-width: 1120px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+    background-color: #fff;
+
+    @media (max-width: 425px) {
+      padding: 20px;
+      max-width: 93.75%;
+    }
+
+    @media (min-width: 426px) and (max-width: 768px) {
+      max-width: 93.75%;
+    }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+      max-width: 93.75%;
+    }
+
+    @media (min-width: 1025px) and (max-width: 1280px) {
+      max-width: 93.75%;
+    }
+
+    .header {
+      width: 100%;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+
+      h1 {
+        color: #3782c7;
+      }
+
+      a {
+        text-decoration: none;
+        font-size: 0;
+
+        &:hover {
+          filter: brightness(0.7);
+        }
+
+        svg {
+          width: 48px;
+          height: 40px;
+        }
+      }
+    }
+
+    .glossary-list {
+      width: 100%;
+
+      border-bottom: 1px solid #d3e2e5;
+      padding-bottom: 10px;
+
+      p {
+        display: flex;
+        gap: 6px;
+
+        button {
+          color: #8fa7b2;
+          border: 0;
+          background: transparent;
+          cursor: pointer;
+
+          &:hover {
+            filter: brightness(0.7);
+          }
+
+          &.clicked {
+            color: #3782c7;
+            font-weight: bold;
+          }
+        }
+
+        img {
+          height: 18px;
+          margin-left: 12px;
+        }
+      }
+    }
+
+    .grid-list {
+      display: grid;
+      grid-template-columns: 160px 160px 270px 300px 100px;
+
+      .grid + .grid {
+        margin-left: 30px;
+      }
+
+      @media (max-width: 425px) {
+        grid-template-columns: 130px 130px 270px 300px 100px;
+
+        .grid:nth-child(n + 3) {
+          display: none;
+        }
+
+        .grid + .grid {
+          margin-left: 10px;
+        }
+      }
+
+      @media (min-width: 426px) and (max-width: 768px) {
+        .grid:nth-child(n + 4) {
+          display: none;
+        }
+
+        .grid + .grid {
+          margin-left: 10px;
+        }
+      }
+
+      @media (min-width: 769px) and (max-width: 1149px) {
+        .grid:nth-child(n + 5) {
+          display: none;
+        }
+      }
+
+      @media (min-width: 1150px) {
+        .grid:nth-child(n + 7) {
+          display: none;
+        }
+      }
+    }
+  }
+}

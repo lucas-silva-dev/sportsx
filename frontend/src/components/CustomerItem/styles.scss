@@ -1,0 +1,26 @@
+ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  li {
+    cursor: pointer;
+    padding: 20px 0;
+
+    &:hover {
+      background-color: #f4f4f4;
+    }
+  }
+
+  li + li {
+    border-top: 1px solid #d3e2e5;
+  }
+
+  strong {
+    position: relative;
+
+    &.grid._5 {
+      text-transform: capitalize;
+    }
+  }
+}

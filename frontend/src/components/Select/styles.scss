@@ -1,0 +1,42 @@
+.select {
+  position: relative;
+  color: #8fa7b2;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+
+  .react-select__control {
+    background-color: #f5f8fa;
+    border: 1px solid #d3e2e5;
+    border-radius: 10px;
+    height: 48px;
+    width: 100%;
+    padding-left: 10px;
+    cursor: pointer;
+
+    .react-select__value-container,
+    .react-select__indicators,
+    .react-select__input-container {
+      height: 46px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .react-select__menu {
+      cursor: pointer;
+
+      .react-select__option--is-focused {
+        background-color: #3782c7 !important;
+      }
+    }
+  }
+
+  span {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #c75a37;
+    font-size: 14px;
+  }
+}
