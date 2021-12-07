@@ -32,7 +32,13 @@ _Teste realizado utilizando o NodeJs (versão 14.5) _
 - Fazer o clone do repositório:
 
 ```sh
-$ git clone https://github.com/lucas-silva-dev/sportsx.git
+git clone https://github.com/lucas-silva-dev/sportsx.git
+```
+
+*Entre no projeto:
+
+```sh
+cd sportsx
 ```
 
 ### Para rodar o backend
@@ -40,14 +46,14 @@ $ git clone https://github.com/lucas-silva-dev/sportsx.git
 #### entre na pasta:
 
 ```sh
-$ cd backend/
+cd backend/
 ```
 
 - Instale as dependências com _yarn_ ou _npm_:
 
 ```sh
-$ yarn install
-$ npm install
+yarn install
+npm install
 ```
 
 - Inicialize os serviços:
@@ -58,9 +64,9 @@ $ npx knex migrate:latest --knexfile knexfile.ts migrate:latest
 
 // inicie o servidor:
 
-$ yarn dev
+yarn dev
  //ou //
-$ npm run dev
+npm run dev
 ```
 
 ### Para rodar o frontend
@@ -68,22 +74,22 @@ $ npm run dev
 #### entre na pasta:
 
 ```sh
-$ cd frontend/
+cd frontend/
 ```
 
 - Instale as dependências com _yarn_ ou _npm_:
 
 ```sh
-$ yarn install
-$ npm install
+yarn install
+npm install
 ```
 
 - Inicialize o Front
 
 ```js
-$ yarn start
+yarn start
  //ou //
-$ npm start
+npm start
 ```
 
 Se tudo ocorrer bem, o projeto vai abrir por padrão em:
