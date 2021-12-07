@@ -60,7 +60,7 @@ npm install
 
 ```js
 // o banco de dados:
-$ npx knex migrate:latest --knexfile knexfile.ts migrate:latest
+npx knex migrate:latest --knexfile knexfile.ts migrate:latest
 
 // inicie o servidor:
 
@@ -98,4 +98,4 @@ Se tudo ocorrer bem, o projeto vai abrir por padrão em:
 http://localhost:3000/
 ```
 
-Caso a porta esteja ocupada, vai buscar a próxima porta disponível a partir da 3001, 3002, 3003...
+Caso a porta esteja ocupada vai perguntar se quer executar em outra porta, confirme com _y_, irá buscar a próxima porta disponível a partir da 3001, 3002, 3003...
