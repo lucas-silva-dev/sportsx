@@ -32,7 +32,7 @@ _Teste realizado utilizando o NodeJs (versão 14.5) _
 - Fazer o clone do repositório:
 
 ```sh
-$ https://github.com/lucas-silva-dev/sportsx.git
+$ git clone https://github.com/lucas-silva-dev/sportsx.git
 ```
 
 ### Para rodar o backend
