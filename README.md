@@ -35,7 +35,7 @@ _Teste realizado utilizando o NodeJs (versão 14.5) _
 git clone https://github.com/lucas-silva-dev/sportsx.git
 ```
 
-*Entre no projeto:
+- Entre no projeto:
 
 ```sh
 cd sportsx
